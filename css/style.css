@@ -87,7 +87,12 @@ body {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-    font-size: 1.1em;
+    font-size: 1em;
+}
+
+.expense-table th,
+.expense-table td {
+    font-size: 1em;
 }
 
 .expense-table th {
@@ -135,7 +140,7 @@ body {
 .students-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1.1em;
+    font-size: 1em;
     table-layout: fixed;
 }
 
@@ -145,6 +150,7 @@ body {
     padding: 8px 4px;
     text-align: left;
     font-weight: 600;
+    font-size: 1em;
 }
 
 .students-table td {
@@ -152,6 +158,7 @@ body {
     border-bottom: 1px solid #eee;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    font-size: 1em;
 }
 
 .students-table tr:nth-child(even) {
@@ -169,7 +176,7 @@ body {
 .contribution-table .name {
     width: 60%;
     line-height: 1.3;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .students-table .balance {
@@ -177,7 +184,7 @@ body {
     font-family: 'Courier New', monospace;
     font-weight: 600;
     width: 40%;
-    font-size: 1.1em;
+    font-size: 1em;
     white-space: nowrap;
 }
 
@@ -201,7 +208,7 @@ body {
 .contribution-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1.1em;
+    font-size: 1em;
     table-layout: fixed;
 }
 
@@ -211,6 +218,7 @@ body {
     padding: 8px 4px;
     text-align: left;
     font-weight: 600;
+    font-size: 1em;
 }
 
 .contribution-table td {
@@ -218,6 +226,7 @@ body {
     border-bottom: 1px solid #eee;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    font-size: 1em;
 }
 
 .contribution-table tr:nth-child(even) {
@@ -234,7 +243,7 @@ body {
 .contribution-table .name {
     width: 60%;
     line-height: 1.3;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .contribution-table .amount {
@@ -242,7 +251,7 @@ body {
     font-family: 'Courier New', monospace;
     font-weight: 700;
     color: #28a745;
-    font-size: 1.1em;
+    font-size: 1em;
     white-space: nowrap;
 }
 
@@ -256,6 +265,11 @@ body {
 .contact-info p {
     margin-bottom: 10px;
     font-size: 14px;
+}
+
+.contact-info p:first-of-type {
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .contact-info .phone {
@@ -320,7 +334,7 @@ body {
     }
 
     .expense-table {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .expense-table th,
@@ -330,7 +344,7 @@ body {
 
     .students-table,
     .contribution-table {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .students-table th,
