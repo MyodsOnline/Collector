@@ -87,7 +87,7 @@ body {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 1.1em;
 }
 
 .expense-table th {
@@ -96,7 +96,6 @@ body {
     padding: 12px 8px;
     text-align: left;
     font-weight: 600;
-    font-size: 13px;
 }
 
 .expense-table td {
@@ -136,7 +135,7 @@ body {
 .students-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 12px;
+    font-size: 1.1em;
     table-layout: fixed;
 }
 
@@ -146,7 +145,6 @@ body {
     padding: 8px 4px;
     text-align: left;
     font-weight: 600;
-    font-size: 11px;
 }
 
 .students-table td {
@@ -170,8 +168,8 @@ body {
 .students-table .name,
 .contribution-table .name {
     width: 60%;
-    font-size: 11px;
     line-height: 1.3;
+    font-size: 1.1em;
 }
 
 .students-table .balance {
@@ -179,7 +177,7 @@ body {
     font-family: 'Courier New', monospace;
     font-weight: 600;
     width: 40%;
-    font-size: 12px;
+    font-size: 1.1em;
     white-space: nowrap;
 }
 
@@ -203,7 +201,7 @@ body {
 .contribution-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 12px;
+    font-size: 1.1em;
     table-layout: fixed;
 }
 
@@ -213,7 +211,6 @@ body {
     padding: 8px 4px;
     text-align: left;
     font-weight: 600;
-    font-size: 11px;
 }
 
 .contribution-table td {
@@ -236,8 +233,8 @@ body {
 
 .contribution-table .name {
     width: 60%;
-    font-size: 11px;
     line-height: 1.3;
+    font-size: 1.1em;
 }
 
 .contribution-table .amount {
@@ -245,7 +242,7 @@ body {
     font-family: 'Courier New', monospace;
     font-weight: 700;
     color: #28a745;
-    font-size: 12px;
+    font-size: 1.1em;
     white-space: nowrap;
 }
 
@@ -283,13 +280,14 @@ body {
     gap: 15px;
     margin-top: 15px;
     align-items: start;
+    width: 100%;
 }
 
 .messengers img {
-    flex: 1;
-    width: 0;
+    width: 50%;
     object-fit: contain;
     cursor: pointer;
+    flex: 1;
 }
 
 @media (max-width: 480px) {
@@ -322,7 +320,7 @@ body {
     }
 
     .expense-table {
-        font-size: 12px;
+        font-size: 1.1em;
     }
 
     .expense-table th,
@@ -332,7 +330,7 @@ body {
 
     .students-table,
     .contribution-table {
-        font-size: 10px;
+        font-size: 1.1em;
     }
 
     .students-table th,
@@ -342,22 +340,14 @@ body {
         padding: 6px 3px;
     }
 
-    .students-table .name,
-    .contribution-table .name {
-        font-size: 10px;
-    }
-
-    .students-table .balance,
-    .contribution-table .amount {
-        font-size: 11px;
-    }
 
     .messengers {
         gap: 10px;
     }
 
     .messengers img {
-        height: 45px;
+        width: 50%;
+        flex: 1;
     }
 }
 
