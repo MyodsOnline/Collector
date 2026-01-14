@@ -129,38 +129,31 @@ body {
 }
 
 .students-table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     margin-top: 15px;
+    width: 100%;
 }
 
 .students-table {
     width: 100%;
-    min-width: 500px;
     border-collapse: collapse;
-    font-size: 13px;
+    font-size: 12px;
+    table-layout: fixed;
 }
 
 .students-table th {
     background: #667eea;
     color: white;
-    padding: 10px 8px;
+    padding: 8px 4px;
     text-align: left;
     font-weight: 600;
-    position: sticky;
-    left: 0;
-    z-index: 1;
-}
-
-.students-table th:first-child {
-    position: sticky;
-    left: 0;
-    background: #667eea;
+    font-size: 11px;
 }
 
 .students-table td {
-    padding: 10px 8px;
+    padding: 8px 4px;
     border-bottom: 1px solid #eee;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .students-table tr:nth-child(even) {
@@ -168,7 +161,7 @@ body {
 }
 
 .students-table .number {
-    width: 40px;
+    width: 30px;
     text-align: center;
     font-weight: 600;
     color: #666;
@@ -176,15 +169,18 @@ body {
 
 .students-table .name,
 .contribution-table .name {
-    min-width: 120px;
+    width: 60%;
+    font-size: 11px;
+    line-height: 1.3;
 }
 
 .students-table .balance {
     text-align: right;
     font-family: 'Courier New', monospace;
     font-weight: 600;
-    min-width: 100px;
-    font-size: 1.1em;
+    width: 40%;
+    font-size: 12px;
+    white-space: nowrap;
 }
 
 .balance-positive {
@@ -200,30 +196,31 @@ body {
 }
 
 .contribution-table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     margin-top: 15px;
+    width: 100%;
 }
 
 .contribution-table {
     width: 100%;
-    min-width: 400px;
     border-collapse: collapse;
-    font-size: 13px;
+    font-size: 12px;
+    table-layout: fixed;
 }
 
 .contribution-table th {
     background: #28a745;
     color: white;
-    padding: 12px 8px;
+    padding: 8px 4px;
     text-align: left;
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 11px;
 }
 
 .contribution-table td {
-    padding: 12px 8px;
+    padding: 8px 4px;
     border-bottom: 1px solid #eee;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .contribution-table tr:nth-child(even) {
@@ -234,6 +231,13 @@ body {
 .students-table .balance-th {
     text-align: right;
     color: white;
+    width: 40%;
+}
+
+.contribution-table .name {
+    width: 60%;
+    font-size: 11px;
+    line-height: 1.3;
 }
 
 .contribution-table .amount {
@@ -241,7 +245,8 @@ body {
     font-family: 'Courier New', monospace;
     font-weight: 700;
     color: #28a745;
-    font-size: 1.1em;
+    font-size: 12px;
+    white-space: nowrap;
 }
 
 .contact-info {
@@ -327,14 +332,24 @@ body {
 
     .students-table,
     .contribution-table {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .students-table th,
     .students-table td,
     .contribution-table th,
     .contribution-table td {
-        padding: 8px 6px;
+        padding: 6px 3px;
+    }
+
+    .students-table .name,
+    .contribution-table .name {
+        font-size: 10px;
+    }
+
+    .students-table .balance,
+    .contribution-table .amount {
+        font-size: 11px;
     }
 
     .messengers {
